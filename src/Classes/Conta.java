@@ -4,13 +4,13 @@ package Classes;
 // loja inicia com saldo zero
 // loja tem conta para receber pagamento dos clientes
 public class Conta {
+    private final String nome;
     private double saldo;
 
-    // Ao invés de setSaldo(), adotei um construtor para definir o saldo inicial da conta
-    public Conta(double saldoInicial){
+    public Conta(String nome, double saldoInicial) {
+        this.nome = nome;
         this.saldo = saldoInicial;
     }
-
     public double getSaldo() {
         return saldo;
     }
@@ -24,4 +24,7 @@ public class Conta {
         saldo += valor;
     }
 
+    public String getNome() {
+        return nome;
+    }
 }
