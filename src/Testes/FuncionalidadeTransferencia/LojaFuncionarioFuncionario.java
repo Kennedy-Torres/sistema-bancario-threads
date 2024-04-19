@@ -7,7 +7,7 @@ import Classes.Loja;
 
 
 
-public class LojaFuncionario {
+public class LojaFuncionarioFuncionario {
     public static void main(String[] args) {
         Banco banco = new Banco();
 
@@ -48,6 +48,14 @@ public class LojaFuncionario {
         loja1.pagarFuncionarios();
         loja2.pagarFuncionarios();
 
+        // Atualiza a conta de investimento dos funcionários
+        for (Funcionario funcionario : loja1.getFuncionarios()) {
+            funcionario.DeContaSalarioParaContaInvestimento(); // Investe 20% do salário na conta de investimento
+        }
+        for (Funcionario funcionario : loja2.getFuncionarios()) {
+            funcionario.DeContaSalarioParaContaInvestimento(); // Investe 20% do salário na conta de investimento
+        }
+
         // saldo final lojas e clientes
         System.out.println("Saldo final da conta da " + loja1.getNome() + ": " + loja1.getContaLoja().getSaldo());
         System.out.println("Saldo final da conta da " + loja2.getNome() + ": " + loja2.getContaLoja().getSaldo());
@@ -63,9 +71,11 @@ public class LojaFuncionario {
         // saldos dos funcionários de cada loja
         for (Funcionario funcionario : loja1.getFuncionarios()) {
             System.out.println("Funcionário - Saldo do " + funcionario.getNome() + " da " + loja1.getNome() + ": " + funcionario.getContaSalario().getSaldo());
+            System.out.println("Funcionário - Saldo de investimento do " + funcionario.getNome() + " da " + loja1.getNome() + ": " + funcionario.getContaInvestimento().getSaldo());
         }
         for (Funcionario funcionario : loja2.getFuncionarios()) {
             System.out.println("Funcionário - Saldo do " + funcionario.getNome() + " da " + loja2.getNome() + ": " + funcionario.getContaSalario().getSaldo());
+            System.out.println("Funcionário - Saldo de investimento do " + funcionario.getNome() + " da " + loja2.getNome() + ": " + funcionario.getContaInvestimento().getSaldo());
         }
     }
 }
