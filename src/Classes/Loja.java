@@ -26,6 +26,29 @@ public class Loja {
         }
     }
 
+    // Método para pagar os funcionários quando o saldo da loja for suficiente
+    public void pagarFuncionarios() {
+        double salarioFuncionario = 1400.0;
+
+        synchronized (contaLoja) { // Controla o acesso concorrente p/ conta da loja
+            while (contaLoja.getSaldo() >= salarioFuncionario) {// Verifica se a loja possui saldo suficiente para pagar os salários
+                // !!!! o salario eh pago de forma individual
+                for (Funcionario funcionario : funcionarios) {
+                    if (contaLoja.getSaldo() >= salarioFuncionario) {
+                        banco.transferir(contaLoja, funcionario.getContaSalario(), salarioFuncionario);
+                        System.out.println("Salário do " + funcionario.getNome() + " da loja " + nome + " pago com sucesso. ( " + funcionario.getContaSalario().getSaldo() + " )");
+                    }
+                    else {
+                        System.out.println("A " + nome + " não possui saldo suficiente para pagar o salário do "+ funcionario.getNome());
+                        break;
+
+                    }
+                }
+            }
+        }
+    }
+
+
     public Conta getContaLoja() {
         return contaLoja;
     }
