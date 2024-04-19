@@ -4,15 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3d34be6-2e65-47fd-8a09-c532206d4648" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="a3d34be6-2e65-47fd-8a09-c532206d4648" name="Changes" comment="Alteração na classe de teste- LojaFuncionario para LojaFuncionarioFuncionario para testarmos todo o fluxo do saldo(cliente-&gt;loja-&gt;funcionario-&gt;funcionario(entreContas)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Classes/Banco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/Banco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Testes/FuncionalidadeTransferencia/ClienteLoja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Testes/FuncionalidadeTransferencia/ClienteLoja.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -21,6 +28,9 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -31,14 +41,62 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "dev",
-    "ignore.virus.scanning.warn.message": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager" selected="Application.LojaFuncionarioFuncionario">
+    <configuration name="ClienteLoja" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Testes.FuncionalidadeTransferencia.ClienteLoja" />
+      <module name="sistema-bancario" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Testes.FuncionalidadeTransferencia.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LojaFuncionarioFuncionario" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Testes.FuncionalidadeTransferencia.LojaFuncionarioFuncionario" />
+      <module name="sistema-bancario" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Testes.FuncionalidadeTransferencia.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tst" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Classes.tst" />
+      <module name="sistema-bancario" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Classes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LojaFuncionarioFuncionario" />
+        <item itemvalue="Application.ClienteLoja" />
+        <item itemvalue="Application.tst" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -48,6 +106,79 @@
       <option name="presentableId" value="Default" />
       <updated>1713271608932</updated>
     </task>
+    <task id="LOCAL-00001" summary="new branch - dev: para desenvolvimento">
+      <option name="closed" value="true" />
+      <created>1713302324900</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713302324901</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Criacao das classes + Métodos iniciais de Cliente, Loja, Funcionario, Banco( transferir) e Conta( debitar e creditar)">
+      <option name="closed" value="true" />
+      <created>1713386938030</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713386938030</updated>
+    </task>
+    <task id="LOCAL-00003" summary="commit da classe banco e conta que faltou no commit anterior">
+      <option name="closed" value="true" />
+      <created>1713388653682</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713388653682</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Criação + classeTeste.Funcionalidade transferência(cliente e loja): cliente compra, de 100 ou 200, alternando as lojas, até o saldo da conta zerar.">
+      <option name="closed" value="true" />
+      <created>1713469558241</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713469558241</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Logica implementada - Para cada loja criada temos 2 funcionarios">
+      <option name="closed" value="true" />
+      <created>1713552589780</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713552589780</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Método criado - pagar funcionarios quando saldo da loja for suficiente">
+      <option name="closed" value="true" />
+      <created>1713552802915</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713552802915</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Classe teste - validando a funcionalidade de transferir saldo da contaLoja para seus respectivos funcionarios (contaSalario)">
+      <option name="closed" value="true" />
+      <created>1713554415645</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1713554415645</updated>
+    </task>
+    <task id="LOCAL-00008" summary="DeContaSalarioParaContaInvestimento - Criação do Metodo de Transferência de saldo entre as contas do funcionario">
+      <option name="closed" value="true" />
+      <created>1713558445984</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1713558445984</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Alteração na classe de teste- LojaFuncionario para LojaFuncionarioFuncionario para testarmos todo o fluxo do saldo(cliente-&gt;loja-&gt;funcionario-&gt;funcionario(entreContas)">
+      <option name="closed" value="true" />
+      <created>1713558638185</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713558638185</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -55,10 +186,36 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/dev" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new branch - dev: para desenvolvimento" />
+    <MESSAGE value="Criacao de algumas classes + Métodos iniciais de cliente, loja e funcionário" />
+    <MESSAGE value="Criacao das classes + Métodos iniciais de Cliente, Loja, Funcionario, Banco( transferir) e Conta( debitar e creditar)" />
+    <MESSAGE value="commit da classe banco e conta que faltou no commit anterior" />
+    <MESSAGE value="Criação + classeTeste.Funcionalidade transferência(cliente e loja): cliente compra, de 100 ou 200, alternando as lojas, até o saldo da conta zerar." />
+    <MESSAGE value="Logica implementada - Para cada loja criada temos 2 funcionarios" />
+    <MESSAGE value="Método criado - pagar funcionarios quando saldo da loja for suficiente" />
+    <MESSAGE value="Classe teste - validando a funcionalidade de transferir saldo da contaLoja para seus respectivos funcionarios (contaSalario)" />
+    <MESSAGE value="DeContaSalarioParaContaInvestimento - Criação do Metodo de Transferência entre as contas do funcionario" />
+    <MESSAGE value="DeContaSalarioParaContaInvestimento - Criação do Metodo de Transferência de saldo entre as contas do funcionario" />
+    <MESSAGE value="Alteração na classe de teste- LojaFuncionario para LojaFuncionarioFuncionario para testarmos todo o fluxo do saldo(cliente-&gt;loja-&gt;funcionario-&gt;funcionario(entreContas)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Alteração na classe de teste- LojaFuncionario para LojaFuncionarioFuncionario para testarmos todo o fluxo do saldo(cliente-&gt;loja-&gt;funcionario-&gt;funcionario(entreContas)" />
   </component>
 </project>
