@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3d34be6-2e65-47fd-8a09-c532206d4648" name="Changes" comment="Alteração na classe de teste- LojaFuncionario para LojaFuncionarioFuncionario para testarmos todo o fluxo do saldo(cliente-&gt;loja-&gt;funcionario-&gt;funcionario(entreContas)">
+    <list default="true" id="a3d34be6-2e65-47fd-8a09-c532206d4648" name="Changes" comment="alterações irrelevantes para a lógica">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Classes/Banco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Classes/Banco.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Testes/FuncionalidadeTransferencia/ClienteLoja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Testes/FuncionalidadeTransferencia/ClienteLoja.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Testes/FuncionalidadeTransferencia/LojaFuncionarioFuncionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Testes/FuncionalidadeTransferencia/LojaFuncionarioFuncionario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,14 +42,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "dev",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Programação/ProjetosPessoais/JAVA/WorkSpace/sistema-bancario - backup2 - nao da start em funcionario"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.LojaFuncionarioFuncionario">
     <configuration name="ClienteLoja" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Testes.FuncionalidadeTransferencia.ClienteLoja" />
@@ -178,7 +180,39 @@
       <option name="project" value="LOCAL" />
       <updated>1713558638185</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="commit xml">
+      <option name="closed" value="true" />
+      <created>1713558773134</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1713558773134</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Atualização Classe Loja - Retirada do método pagarFuncionarios na classe Loja para colocar método  receberSalario na classe Funcionario.">
+      <option name="closed" value="true" />
+      <created>1713660067259</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1713660067259</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Criação método receberSalario - &#10;Transfere o saldo de contaLoja para sua contaSalario (LOJA PAGA SEUS FUNCIONARIOS)">
+      <option name="closed" value="true" />
+      <created>1713662192031</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1713662192031</updated>
+    </task>
+    <task id="LOCAL-00013" summary="alterações irrelevantes para a lógica">
+      <option name="closed" value="true" />
+      <created>1713662785777</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1713662785777</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -216,6 +250,10 @@
     <MESSAGE value="DeContaSalarioParaContaInvestimento - Criação do Metodo de Transferência entre as contas do funcionario" />
     <MESSAGE value="DeContaSalarioParaContaInvestimento - Criação do Metodo de Transferência de saldo entre as contas do funcionario" />
     <MESSAGE value="Alteração na classe de teste- LojaFuncionario para LojaFuncionarioFuncionario para testarmos todo o fluxo do saldo(cliente-&gt;loja-&gt;funcionario-&gt;funcionario(entreContas)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Alteração na classe de teste- LojaFuncionario para LojaFuncionarioFuncionario para testarmos todo o fluxo do saldo(cliente-&gt;loja-&gt;funcionario-&gt;funcionario(entreContas)" />
+    <MESSAGE value="commit xml" />
+    <MESSAGE value="Atualização Classe Loja - Retirada do método pagarFuncionarios na classe Loja para colocar método  receberSalario na classe Funcionario." />
+    <MESSAGE value="Criação método receberSalario - &#10;Transfere o saldo de contaLoja para sua contaSalario (LOJA PAGA SEUS FUNCIONARIOS)" />
+    <MESSAGE value="alterações irrelevantes para a lógica" />
+    <option name="LAST_COMMIT_MESSAGE" value="alterações irrelevantes para a lógica" />
   </component>
 </project>
