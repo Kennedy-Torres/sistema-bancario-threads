@@ -79,5 +79,35 @@ public class Main {
             e.printStackTrace();
         }
 
+        // saldo final lojas e clientes
+        System.out.println("\n=====================================================");
+        System.out.println("||             Saldo final em cada conta           ||");
+        System.out.println("=====================================================");
+
+        System.out.println("Conta dos clientes:");
+        System.out.println("- " + cliente1.getNome() + ": "+ cliente1.getContaCliente().getSaldo() );
+        System.out.println("- " + cliente2.getNome() + ": "+ cliente2.getContaCliente().getSaldo() );
+        System.out.println("- " + cliente3.getNome() + ": "+ cliente3.getContaCliente().getSaldo() );
+        System.out.println("- " + cliente4.getNome() + ": "+ cliente4.getContaCliente().getSaldo() );
+        System.out.println("- " + cliente5.getNome() + ": "+ cliente5.getContaCliente().getSaldo() );
+        System.out.println();
+
+        System.out.println("Conta das Lojas:");
+        System.out.println("- " + loja1.getNome() + ": R$" + loja1.getContaLoja().getSaldo());
+        System.out.println("- " + loja2.getNome() + ": R$" + loja2.getContaLoja().getSaldo());
+
+        System.out.println("\nConta dos Funcionários:\nLoja 01:");
+
+        // saldos dos funcionários de cada loja
+        for (Funcionario funcionario : funcionariosLoja1) {
+            System.out.println("- Conta do salário(líquido) - " + funcionario.getNome() + ": R$" + funcionario.getContaSalario().getSaldo());
+            System.out.println("- Conta de investimento - " + funcionario.getNome() + ": R$" + funcionario.getContaInvestimento().getSaldo());
+        }
+        System.out.println("\nLoja 02:");
+        for (Funcionario funcionario : funcionariosLoja2) {
+            System.out.println("- Conta do salário(líquido) - " + funcionario.getNome() + ": R$" + funcionario.getContaSalario().getSaldo());
+            System.out.println("- Conta de investimento - " + funcionario.getNome() + ": R$" + funcionario.getContaInvestimento().getSaldo());
+        }
+
     }
 }
