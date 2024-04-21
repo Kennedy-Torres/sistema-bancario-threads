@@ -1,6 +1,6 @@
 # Projeto 1 (AT2/N1) - Sistema Bancário utilizando Threads
 
-![Badge Finalizado]([http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge](https://img.shields.io/static/v1?label=STATUS&message=%20FINALIZADO&color=GREEN&style=for-the-badge))
+![Badge Finalizado](https://img.shields.io/static/v1?label=STATUS&message=%20FINALIZADO&color=GREEN&style=for-the-badge)
 
 
 ## Índice 
