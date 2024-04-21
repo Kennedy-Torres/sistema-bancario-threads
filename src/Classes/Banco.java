@@ -11,15 +11,13 @@ public class Banco {
         if (origem.getSaldo() >= valor) {
             origem.debitar(valor);
             destino.creditar(valor);
-            System.out.println("Transferência de R$" + valor + " realizada com sucesso de " + origem.getNome() + " para " + destino.getNome());
-
         } else { // pode retirar, o saldo nunca sera insuficiente, devido a logica nas classes isoladas
             System.out.println("Transferência de " + valor + " não pôde ser concluída: saldo insuficiente em " + origem.getNome());
         }
 
-        // espera 1s antes de realizar a próxima compra
+        // espera 0,1s antes de realizar a próxima transacao
         try {
-            Thread.sleep(1000);
+            Thread.sleep(100);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

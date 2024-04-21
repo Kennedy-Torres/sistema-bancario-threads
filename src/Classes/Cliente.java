@@ -20,33 +20,33 @@ public class Cliente extends Thread {
     }
 
     public void run() {
-        Random random = new Random();
-        while (contaCliente.getSaldo() > 0) {
-            // Escolhe aleatoriamente entre R$ 100,00 ou R$ 200,00
-            double valorCompra = random.nextDouble() < 0.5 ? 100.0 : 200.0;
+            Random random = new Random();
+            while (contaCliente.getSaldo() > 0) {
+                // Escolhe aleatoriamente entre R$ 100,00 ou R$ 200,00
+                double valorCompra = random.nextDouble() < 0.5 ? 100.0 : 200.0;
 
-            // Escolhe a 1a loja de forma random e a partir dai alterna entre as lojas
-            Loja primeiraLojaEscolhida;
-            do{
-                int indiceLoja = random.nextInt(lojas.length);
-                primeiraLojaEscolhida = lojas[indiceLoja];
-            }while(primeiraLojaEscolhida == ultimaLojaEscolhida); // condicao para proporcionar alternancia na escolha das lojas
-            ultimaLojaEscolhida = primeiraLojaEscolhida; // update
+                // Escolhe a 1a loja de forma random e a partir dai alterna entre as lojas
+                Loja primeiraLojaEscolhida;
+                do{
+                    int indiceLoja = random.nextInt(lojas.length);
+                    primeiraLojaEscolhida = lojas[indiceLoja];
+                }while(primeiraLojaEscolhida == ultimaLojaEscolhida); // condicao para proporcionar alternancia na escolha das lojas
+                ultimaLojaEscolhida = primeiraLojaEscolhida; // update
 
-            // Se o saldo for exatamente R$ 100,00 e a compra for de R$ 200,00, ajusta a compra para R$ 100,00}
-            if (contaCliente.getSaldo() == 100.0 && valorCompra == 200.0) {
-                valorCompra = 100.0;
+                // Se o saldo for exatamente R$ 100,00 e a compra for de R$ 200,00, ajusta a compra para R$ 100,00}
+                if (contaCliente.getSaldo() == 100.0 && valorCompra == 200.0) {
+                    valorCompra = 100.0;
+                }
+
+                // Transfere o valor da compra para a conta da loja ... fluxo: cliente -> loja
+                synchronized (this) {
+                    banco.transferir(contaCliente, ultimaLojaEscolhida.getContaLoja(), valorCompra);
+
+                    // o print a baixo mostra o fluxo das threads entre cliente e loja
+                    System.out.println(getThreadName() +" - "+contaCliente.getNome()+ " realizou uma compra de R$" + valorCompra + " na " + ultimaLojaEscolhida.getNome() + ". (Saldo atual - "+nome+": R$"+ getContaCliente().getSaldo()+")");
+                }
             }
-
-
-            // Transfere o valor da compra para a conta da loja ... fluxo: cliente -> loja
-            synchronized (this) {
-                banco.transferir(contaCliente, ultimaLojaEscolhida.getContaLoja(), valorCompra);
-                System.out.println(getThreadName() +" - "+contaCliente.getNome()+ " realizou uma compra de R$" + valorCompra + " na " + ultimaLojaEscolhida.getNome() + " Saldo atual: "+ getContaCliente().getSaldo());
-            }
-
-        }
-        System.out.println(getThreadName() + " terminou suas compras.");
+            System.out.println(getThreadName() +" ( "+nome+ " ) terminou suas compras.\n");
     }
 
 
