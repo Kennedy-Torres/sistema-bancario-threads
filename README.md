@@ -12,10 +12,10 @@
 
 ## Quanto a importação do projeto
 <div>
-  <h1> Atenção - o projeto foi realizado utilizando a IDE do Intellij, para fazer a importação do projeto no eclipse:</h1>
+  <h4> Atenção - o projeto foi realizado utilizando a IDE do Intellij, para fazer a importação do projeto no eclipse:</h4>
     <p>
      I. Forma - realizar o Download ZIP do projeto:<br>
-      1. Na opção file, dentro do eclipse, selecione "Open Projects from File System...
+      1. Na opção file, dentro do eclipse, selecione "Open Projects from File System...<br>
       2. Selecione Directory e importe o arquivo já extraido, em seguida clique em Finish
     </p>
     <p>
