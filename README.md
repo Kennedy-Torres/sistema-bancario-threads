@@ -11,6 +11,14 @@
 - [Autores](#autores)
 
 
+## Organização das branchs
+<div>
+  <h4>
+    <p>
+    O projeto foi dividido em 2 branchs: master e dev. A master é a branch onde está o projeto final com o pacote Classes (Banco, Cliente, Conta, Funcionario e Loja) e o pacote Programa (main), dev é a           branch onde foi realizada todo o desenvolvimento e criado alguns testes no processo para testar as funcionalidades. Em suma, foi realizado um merge da branch dev para branch master.
+    </p>
+  </h4>
+</div>
 
 ## :hammer: Funcionalidades implantadas no projeto
 
@@ -18,13 +26,13 @@
 - `Observação 1`: Dentro do método transferir() tem as funções debitar(), que retira saldo da conta, e creditar(), que adiciona saldo na conta, desenvolvidas na classe Conta.
 - `Funcionalidade 2`: Classe Cliente é uma thread no qual realiza o fluxo do saldo da conta do cliente para conta da loja (ATO DO CLIENTE REALIZAR UMA COMPRA NA LOJA), com a lógica dentro do método run() .
 - `Funcionalidade 3a`: Classe Funcionário é uma thread no qual realiza o fluxo do saldo da conta da loja para conta de salário do funcionário. (ATO DO FUNCIONÁRIO RECEBER O PAGAMENTO FEITO PELA LOJA), com a lógica dentro do método run().
-- `Observação 2`: As threads do Funcionário só vão ser startadas quando todas as threads dos clientes terminarem sua execução. 
+- `Observação 2`: As threads do Funcionário só vão ser "startadas" quando todas as threads dos clientes terminarem sua execução. 
 - `Funcionalidade 3b`: Ainda na classe Funcionário, ele tbm vai realizar o fluxo do valor recebido pela loja entre as suas duas contas: conta salário e conta investimento, sendo a conta investimento = 20% do salario recebido; com a lógica dentro do método run().
-- `Observação 3`: O saldo final das contas só vai ser impresso no terminal quando todas as threads terminarem suas execuções ( - join() ).
+- `Observação 3`: O saldo final das contas só vai ser impresso no terminal quando todas as threads (no caso dos funcionários, pois para as threads funcionarios iniciarem as threads clientes devem ter finalizado) terminarem suas execuções, pois precisamos dos dados que elas irão fornecer. ( - join() ).
 
 ## Enunciado do projeto
 
-![Enunciado do Projeto](enunciado.jpg)
+![Enunciado do Projeto](Enunciado.jpg)
 
   
 ## ✔️ Técnicas e tecnologias utilizadas
