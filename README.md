@@ -4,12 +4,26 @@
 
 
 ## Índice 
-
+- [Quanto a importação do projeto](#quanto-a-importação-do-projeto)
 - [Funcionalidades implantadas no projeto](#hammer-funcionalidades-implantadas-no-projeto)
 - [Enunciado do projeto](#enunciado-do-projeto)
 - [Técnicas e tecnologias utilizadas](#️-técnicas-e-tecnologias-utilizadas)
 - [Autores](#autores)
 
+## Quanto a importação do projeto
+<div>
+  <h1> Atenção - o projeto foi realizado utilizando a IDE do Intellij, para fazer a importação do projeto no eclipse:</h1>
+    <p>
+     I. Forma - realizar o Download ZIP do projeto:<br>
+      1. Na opção file, dentro do eclipse, selecione "Open Projects from File System...
+      2. Selecione Directory e importe o arquivo já extraido, em seguida clique em Finish
+    </p>
+    <p>
+      II. Forma - clone o repositório (criar uma cópia local de um repositório Git remoto):<br>
+       ... - Web URL - https://github.com/Kennedy-Torres/sistema-bancario-threads.git 
+    </p>
+  
+</div>
 
 ## Organização das branchs
 <div>
